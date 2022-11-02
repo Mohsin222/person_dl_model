@@ -1,0 +1,18 @@
+git clone https://github.com/ultralytics/yolov5  # clone
+cd yolov5
+pip install -r requirements.txt
+
+
+//train
+python train.py --img 640 --batch 16 --epochs 3 --data coco128.yaml --weights yolov5s.pt
+
+
+
+
+
+//test
+best.pt is downloaded from link after train model it show on cmd
+python detect.py --weights yolov5s.pt --img 640 --conf 0.25 --source ../a1.jpg
+
+
+python detect.py --weights best.pt --img 640 --conf 0.25 --source ../a1.jpg

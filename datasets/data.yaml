@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['female', 'male']
+
+roboflow:
+  workspace: firstdataset-sxw57
+  project: detect-persons-bghyp
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/firstdataset-sxw57/detect-persons-bghyp/dataset/3
